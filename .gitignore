@@ -1,3 +1,6 @@
+# WebStorm hidden/settings folder
+.idea
+
 # Logs
 logs
 *.log
