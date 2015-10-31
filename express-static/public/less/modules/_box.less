@@ -1,0 +1,46 @@
+.box {
+  margin-bottom: 30px;
+  position: relative;
+
+  &.box-small-icon {
+    padding-left: 40px;
+
+    .box-title {
+      .fz(25);
+    }
+  }
+}
+
+.box-icon {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 22px;
+}
+
+.box-icon-large {
+  color: @color_green;
+  .fz(40);
+  margin-bottom: 20px;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  border-radius: 50%;
+  background-color: @color_grey-lighter;
+}
+
+.box-title {
+  .fz(35);
+  font-weight: @font_light;
+
+  .box-image & {
+    .fz(25);
+  }
+}
+
+.box-description {
+  .fz(16);
+  font-weight: @font_light;
+  line-height: 1.5;
+  color: @color_grey-dark;
+}
