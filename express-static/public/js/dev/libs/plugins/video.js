@@ -56,7 +56,7 @@
     1: [function (_dereq_, module, exports) {
       (function (global) {
         var topLevel = typeof global !== 'undefined' ? global :
-          typeof window !== 'undefined' ? window : {}
+          typeof window !== 'undefined' ? window : {};
         var minDoc = _dereq_('min-document');
 
         if (typeof document !== 'undefined') {
@@ -71,7 +71,7 @@
           module.exports = doccy;
         }
 
-      }).call(this, typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+      }).call(this, typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {});
 //# sourceMappingURL=data:application/json;charset:utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9nbG9iYWwvZG9jdW1lbnQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwiZmlsZSI6ImdlbmVyYXRlZC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzQ29udGVudCI6WyJ2YXIgdG9wTGV2ZWwgPSB0eXBlb2YgZ2xvYmFsICE9PSAndW5kZWZpbmVkJyA/IGdsb2JhbCA6XG4gICAgdHlwZW9mIHdpbmRvdyAhPT0gJ3VuZGVmaW5lZCcgPyB3aW5kb3cgOiB7fVxudmFyIG1pbkRvYyA9IHJlcXVpcmUoJ21pbi1kb2N1bWVudCcpO1xuXG5pZiAodHlwZW9mIGRvY3VtZW50ICE9PSAndW5kZWZpbmVkJykge1xuICAgIG1vZHVsZS5leHBvcnRzID0gZG9jdW1lbnQ7XG59IGVsc2Uge1xuICAgIHZhciBkb2NjeSA9IHRvcExldmVsWydfX0dMT0JBTF9ET0NVTUVOVF9DQUNIRUA0J107XG5cbiAgICBpZiAoIWRvY2N5KSB7XG4gICAgICAgIGRvY2N5ID0gdG9wTGV2ZWxbJ19fR0xPQkFMX0RPQ1VNRU5UX0NBQ0hFQDQnXSA9IG1pbkRvYztcbiAgICB9XG5cbiAgICBtb2R1bGUuZXhwb3J0cyA9IGRvY2N5O1xufVxuIl19
     }, {"min-document": 3}],
     2: [function (_dereq_, module, exports) {
@@ -86,7 +86,7 @@
           module.exports = {};
         }
 
-      }).call(this, typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+      }).call(this, typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {});
 //# sourceMappingURL=data:application/json;charset:utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9nbG9iYWwvd2luZG93LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsImZpbGUiOiJnZW5lcmF0ZWQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlc0NvbnRlbnQiOlsiaWYgKHR5cGVvZiB3aW5kb3cgIT09IFwidW5kZWZpbmVkXCIpIHtcbiAgICBtb2R1bGUuZXhwb3J0cyA9IHdpbmRvdztcbn0gZWxzZSBpZiAodHlwZW9mIGdsb2JhbCAhPT0gXCJ1bmRlZmluZWRcIikge1xuICAgIG1vZHVsZS5leHBvcnRzID0gZ2xvYmFsO1xufSBlbHNlIGlmICh0eXBlb2Ygc2VsZiAhPT0gXCJ1bmRlZmluZWRcIil7XG4gICAgbW9kdWxlLmV4cG9ydHMgPSBzZWxmO1xufSBlbHNlIHtcbiAgICBtb2R1bGUuZXhwb3J0cyA9IHt9O1xufVxuIl19
     }, {}],
     3: [function (_dereq_, module, exports) {
@@ -2224,11 +2224,11 @@
 
     }, {}],
     48: [function (_dereq_, module, exports) {
-      module.exports = SafeParseTuple
+      module.exports = SafeParseTuple;
 
       function SafeParseTuple(obj, reviver) {
-        var json
-        var error = null
+        var json;
+        var error = null;
 
         try {
           json = JSON.parse(obj, reviver)
@@ -2248,7 +2248,7 @@
 
       module.exports = function tsml(sa) {
         var s = ''
-          , i = 0
+          , i = 0;
 
         for (; i < arguments.length; i++)
           s += clean(sa[i]) + (arguments[i + 1] || '')
@@ -2258,14 +2258,14 @@
     }, {}],
     50: [function (_dereq_, module, exports) {
       "use strict";
-      var window = _dereq_("global/window")
-      var once = _dereq_("once")
-      var parseHeaders = _dereq_("parse-headers")
+      var window = _dereq_("global/window");
+      var once = _dereq_("once");
+      var parseHeaders = _dereq_("parse-headers");
 
 
-      module.exports = createXHR
-      createXHR.XMLHttpRequest = window.XMLHttpRequest || noop
-      createXHR.XDomainRequest = "withCredentials" in (new createXHR.XMLHttpRequest()) ? createXHR.XMLHttpRequest : window.XDomainRequest
+      module.exports = createXHR;
+      createXHR.XMLHttpRequest = window.XMLHttpRequest || noop;
+      createXHR.XDomainRequest = "withCredentials" in (new createXHR.XMLHttpRequest()) ? createXHR.XMLHttpRequest : window.XDomainRequest;
 
 
       function isEmpty(obj) {
@@ -2284,7 +2284,7 @@
 
         function getBody() {
           // Chrome with requestType=blob throws errors arround when even testing access to responseText
-          var body = undefined
+          var body = undefined;
 
           if (xhr.response) {
             body = xhr.response
@@ -2309,30 +2309,30 @@
           method: method,
           url: uri,
           rawRequest: xhr
-        }
+        };
 
         function errorFunc(evt) {
-          clearTimeout(timeoutTimer)
+          clearTimeout(timeoutTimer);
           if (!(evt instanceof Error)) {
             evt = new Error("" + (evt || "Unknown XMLHttpRequest Error"))
           }
-          evt.statusCode = 0
+          evt.statusCode = 0;
           callback(evt, failureResponse)
         }
 
         // will load the data & process the response in a special response object
         function loadFunc() {
-          if (aborted) return
-          var status
-          clearTimeout(timeoutTimer)
+          if (aborted) return;
+          var status;
+          clearTimeout(timeoutTimer);
           if (options.useXDR && xhr.status === undefined) {
             //IE8 CORS GET successful response doesn't have a status field, but body is fine
             status = 200
           } else {
             status = (xhr.status === 1223 ? 204 : xhr.status)
           }
-          var response = failureResponse
-          var err = null
+          var response = failureResponse;
+          var err = null;
 
           if (status !== 0) {
             response = {
@@ -2342,7 +2342,7 @@
               headers: {},
               url: uri,
               rawRequest: xhr
-            }
+            };
             if (xhr.getAllResponseHeaders) { //remember xhr can in fact be XDR for CORS in IE
               response.headers = parseHeaders(xhr.getAllResponseHeaders())
             }
@@ -2357,13 +2357,13 @@
           options = {uri: options}
         }
 
-        options = options || {}
+        options = options || {};
         if (typeof callback === "undefined") {
           throw new Error("callback argument missing")
         }
-        callback = once(callback)
+        callback = once(callback);
 
-        var xhr = options.xhr || null
+        var xhr = options.xhr || null;
 
         if (!xhr) {
           if (options.cors || options.useXDR) {
@@ -2373,34 +2373,34 @@
           }
         }
 
-        var key
-        var aborted
-        var uri = xhr.url = options.uri || options.url
-        var method = xhr.method = options.method || "GET"
-        var body = options.body || options.data
-        var headers = xhr.headers = options.headers || {}
-        var sync = !!options.sync
-        var isJson = false
-        var timeoutTimer
+        var key;
+        var aborted;
+        var uri = xhr.url = options.uri || options.url;
+        var method = xhr.method = options.method || "GET";
+        var body = options.body || options.data;
+        var headers = xhr.headers = options.headers || {};
+        var sync = !!options.sync;
+        var isJson = false;
+        var timeoutTimer;
 
         if ("json" in options) {
-          isJson = true
-          headers["accept"] || headers["Accept"] || (headers["Accept"] = "application/json") //Don't override existing accept header declared by user
+          isJson = true;
+          headers["accept"] || headers["Accept"] || (headers["Accept"] = "application/json"); //Don't override existing accept header declared by user
           if (method !== "GET" && method !== "HEAD") {
-            headers["content-type"] || headers["Content-Type"] || (headers["Content-Type"] = "application/json") //Don't override existing accept header declared by user
+            headers["content-type"] || headers["Content-Type"] || (headers["Content-Type"] = "application/json"); //Don't override existing accept header declared by user
             body = JSON.stringify(options.json)
           }
         }
 
-        xhr.onreadystatechange = readystatechange
-        xhr.onload = loadFunc
-        xhr.onerror = errorFunc
+        xhr.onreadystatechange = readystatechange;
+        xhr.onload = loadFunc;
+        xhr.onerror = errorFunc;
         // IE9 must have onprogress be set to a unique function.
         xhr.onprogress = function () {
           // IE must die
-        }
-        xhr.ontimeout = errorFunc
-        xhr.open(method, uri, !sync, options.username, options.password)
+        };
+        xhr.ontimeout = errorFunc;
+        xhr.open(method, uri, !sync, options.username, options.password);
         //has to be after open
         if (!sync) {
           xhr.withCredentials = !!options.withCredentials
@@ -2411,11 +2411,11 @@
         if (!sync && options.timeout > 0) {
           timeoutTimer = setTimeout(function () {
             aborted = true//IE9 may still call readystatechange
-            xhr.abort("timeout")
-            var e = new Error("XMLHttpRequest timeout")
-            e.code = "ETIMEDOUT"
+            xhr.abort("timeout");
+            var e = new Error("XMLHttpRequest timeout");
+            e.code = "ETIMEDOUT";
             errorFunc(e)
-          }, options.timeout)
+          }, options.timeout);
         }
 
         if (xhr.setRequestHeader) {
@@ -2438,7 +2438,7 @@
           options.beforeSend(xhr)
         }
 
-        xhr.send(body)
+        xhr.send(body);
 
         return xhr
 
@@ -2450,7 +2450,7 @@
 
     }, {"global/window": 2, "once": 51, "parse-headers": 55}],
     51: [function (_dereq_, module, exports) {
-      module.exports = once
+      module.exports = once;
 
       once.proto = once(function () {
         Object.defineProperty(Function.prototype, 'once', {
@@ -2459,25 +2459,25 @@
           },
           configurable: true
         })
-      })
+      });
 
       function once(fn) {
-        var called = false
+        var called = false;
         return function () {
-          if (called) return
-          called = true
+          if (called) return;
+          called = true;
           return fn.apply(this, arguments)
         }
       }
 
     }, {}],
     52: [function (_dereq_, module, exports) {
-      var isFunction = _dereq_('is-function')
+      var isFunction = _dereq_('is-function');
 
-      module.exports = forEach
+      module.exports = forEach;
 
-      var toString = Object.prototype.toString
-      var hasOwnProperty = Object.prototype.hasOwnProperty
+      var toString = Object.prototype.toString;
+      var hasOwnProperty = Object.prototype.hasOwnProperty;
 
       function forEach(list, iterator, context) {
         if (!isFunction(iterator)) {
@@ -2489,9 +2489,9 @@
         }
 
         if (toString.call(list) === '[object Array]')
-          forEachArray(list, iterator, context)
+          forEachArray(list, iterator, context);
         else if (typeof list === 'string')
-          forEachString(list, iterator, context)
+          forEachString(list, iterator, context);
         else
           forEachObject(list, iterator, context)
       }
@@ -2521,12 +2521,12 @@
 
     }, {"is-function": 53}],
     53: [function (_dereq_, module, exports) {
-      module.exports = isFunction
+      module.exports = isFunction;
 
-      var toString = Object.prototype.toString
+      var toString = Object.prototype.toString;
 
       function isFunction(fn) {
-        var string = toString.call(fn)
+        var string = toString.call(fn);
         return string === '[object Function]' ||
           (typeof fn === 'function' && string !== '[object RegExp]') ||
           (typeof window !== 'undefined' &&
@@ -2535,8 +2535,7 @@
           fn === window.alert ||
           fn === window.confirm ||
           fn === window.prompt))
-      };
-
+      }
     }, {}],
     54: [function (_dereq_, module, exports) {
 
@@ -2560,20 +2559,20 @@
         , forEach = _dereq_('for-each')
         , isArray = function (arg) {
           return Object.prototype.toString.call(arg) === '[object Array]';
-        }
+        };
 
       module.exports = function (headers) {
         if (!headers)
-          return {}
+          return {};
 
-        var result = {}
+        var result = {};
 
         forEach(
           trim(headers).split('\n')
           , function (row) {
             var index = row.indexOf(':')
               , key = trim(row.slice(0, index)).toLowerCase()
-              , value = trim(row.slice(index + 1))
+              , value = trim(row.slice(index + 1));
 
             if (typeof(result[key]) === 'undefined') {
               result[key] = value
@@ -2583,7 +2582,7 @@
               result[key] = [result[key], value]
             }
           }
-        )
+        );
 
         return result
       }
@@ -10763,7 +10762,7 @@
             }
           }
 
-          return;
+
         };
 
         /**
@@ -21480,7 +21479,7 @@
               if (!line) {
                 self.state = "ID";
               }
-              continue;
+
           }
         }
       } catch (e) {
