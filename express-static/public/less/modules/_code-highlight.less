@@ -1,0 +1,36 @@
+// Prism.js
+@import (less) '../libs/prism.css';
+
+.code-highlight {
+  position: relative;
+  margin-bottom: 30px;
+
+  :not(pre) > code[class*=language-], pre[class*=language-] {
+    background-color: #fdfdfd;
+    border: 1px solid #cecece;
+    border-radius: 3px;
+  }
+
+  .copy-code {
+    .fz(14);
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 8px 10px;
+    border-radius: 0 3px 0 3px;
+    color: @color_grey-dark;
+    background-color: @color_grey-lighter;
+    -webkit-transition: color .25s ease, background-color .25s ease;
+    -moz-transition: color .25s ease, background-color .25s ease;
+    -ms-transition: color .25s ease, background-color .25s ease;
+    -o-transition: color .25s ease, background-color .25s ease;
+    transition: color .25s ease, background-color .25s ease;
+
+    &.zeroclipboard-is-hover {
+      background-color: @color_green;
+      color: white;
+    }
+  }
+}
