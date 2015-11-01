@@ -1,7 +1,7 @@
 {
-  "name": "promises_sample",
+  "name": "@adron/mod-zample",
   "version": "1.0.0",
-  "description": "A promises sample.",
+  "description": "An example of building a module to deploy on the npm registry.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -11,10 +11,13 @@
     "url": "git+ssh://git@github.com/ThrashingCode/nodejs-training-examples.git"
   },
   "keywords": [
-    "training",
+    "module",
+    "npm",
+    "package",
+    "nodejs",
+    "javascript",
     "sample",
-    "promises",
-    "promise"
+    "example"
   ],
   "author": "Adron Hall",
   "license": "Apache-2.0",
@@ -25,8 +28,5 @@
   "devDependencies": {
     "chai": "^3.4.0",
     "mocha": "^2.3.3"
-  },
-  "dependencies": {
-    "bluebird": "^3.0.3"
   }
 }
