@@ -1,0 +1,32 @@
+{
+  "name": "@adron/mod-zample",
+  "version": "1.0.0",
+  "description": "An example of building a module to deploy on the npm registry.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ThrashingCode/nodejs-training-examples.git"
+  },
+  "keywords": [
+    "module",
+    "npm",
+    "package",
+    "nodejs",
+    "javascript",
+    "sample",
+    "example"
+  ],
+  "author": "Adron Hall",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ThrashingCode/nodejs-training-examples/issues"
+  },
+  "homepage": "https://github.com/ThrashingCode/nodejs-training-examples#readme",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3"
+  }
+}
