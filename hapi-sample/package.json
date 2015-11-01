@@ -1,0 +1,28 @@
+{
+  "name": "hapi-sample",
+  "version": "1.0.0",
+  "description": "A simple hapi starter hello world API.",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/ThrashingCode/nodejs-training-examples.git"
+  },
+  "keywords": [
+    "Hapi.js",
+    "hapi",
+    "api"
+  ],
+  "author": "= <=> (=)",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3"
+  },
+  "dependencies": {
+    "hapi": "^11.0.3",
+    "inert": "^3.2.0"
+  }
+}
